@@ -1,13 +1,14 @@
 #logo{
-    width: 30px;
+    width: 60px;
     position: relative;
-    background-color: lightgreen;
+    background-color: black;
     border:solid;
     border-color:lightblue;
 } 
 
-#logoImg{
+.navbar-brand h1{
     margin: 0px 16px 0px 0px;
+
 }
 
 body{
