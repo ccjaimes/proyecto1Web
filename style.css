@@ -1,6 +1,6 @@
 
 #content-wrap {
-    padding-bottom: 4.5rem;
+    padding-bottom: 9rem;
 }
 
 
@@ -94,6 +94,26 @@ footer {
     width: 9em;
 }
 
+#habilities{
+    background-color: gainsboro;
+}
+
+#habilities .habContent
+{
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width:5%;
+    background-color: yellow;
+    -webkit-transition: width 2s;
+    transition: width 2s;
+}
+
+#habilities .habContent:hover{
+    width:80%;
+}
+
 #imgSA{
     width: 100%;
 }
@@ -102,5 +122,13 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 4.5rem;            /* Footer height */
+    height: 9rem;
+}
+
+#sticky-footer{
+    vertical-align: middle;
+}
+
+#githubimg{
+    width: 90px;
 }
