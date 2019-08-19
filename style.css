@@ -18,19 +18,19 @@
 } 
 
 #logo2{
-    width: 40px;
+    width: 34px;
     position: relative;
     background-color: black;
     border:solid;
     border-color:lightblue;
 } 
 
-.navbar-brand.h1.visible-md{
+#a1{
     margin: 0px 16px 0px 0px;
     font-size: 2.2em;
 }
 
-.navbar-brand.h1.invisible-md{
+#a2{
     margin: 0px 16px 0px 0px;
     font-size: 1.6em;
 }
