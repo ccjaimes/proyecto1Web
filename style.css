@@ -168,16 +168,8 @@
     overflow: auto;
 }
 
-#abilities .habContent
-{
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    width:5%;
-    background-color: yellow;
-    -webkit-transition: width 2s;
-    transition: width 2s;
+#abilities .col-4{
+    border: solid;
 }
 
 #abilities .habContent:hover{
