@@ -1,6 +1,7 @@
 
+
 #content-wrap {
-    padding-bottom: 9rem;
+    padding-bottom: 6rem;
 }
 
 
@@ -35,9 +36,6 @@
     font-size: 1.6em;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif !important;
-}
 
 #navbarTop{
     font-size: 1.4em;
@@ -55,12 +53,6 @@ body{
     filter: brightness(50%);
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
 #first{
     text-align: center;
     font-size: 2.5vw;
@@ -76,29 +68,72 @@ footer {
     line-height: 2em;
 }
 
-#first-right> div{
+#first-left div{
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 3%;
     padding: 0 auto;
-    width: 60%;
+    width: 50%;
 }
 
-#first-left> div{
+#first-right> div{
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 3%;
     padding: 0 auto;
     width: 60%;
 }
 
 #me{
-    width: 9em;
+    display: block;
+    width: 100%;
 }
 
-#habilities{
+#innertxtme{
+    position: absolute;
+    bottom: 20%;
+    height: auto;
+    font-size: 0.8em;
+    left:40%;
+    transform: translate(-55%,-80%);
+    color:white;
+}
+
+#metxt{
+    position: absolute;
+    width: 90%;
+    opacity: 0;
+    transition: .5s ease;
+    background: blue;
+}
+
+.meoverlay:hover #metxt{
+    opacity: 0.7;
+}
+
+.meoverlay:active #metxt{
+    opacity: 0.7;
+}
+
+#scrollExp .row{
+    width: 200%;
+}
+
+@media(max-width:1200px) {
+    #scrollExp .row{
+        width: 400%;
+    }
+}
+@media(max-width:600px) {
+    #scrollExp .row{
+        width: 800%;
+    }
+}
+
+#abilities{
     background-color: gainsboro;
+    overflow: auto;
 }
 
-#habilities .habContent
+#abilities .habContent
 {
     padding-top: 0.3em;
     padding-bottom: 0.3em;
@@ -110,7 +145,7 @@ footer {
     transition: width 2s;
 }
 
-#habilities .habContent:hover{
+#abilities .habContent:hover{
     width:80%;
 }
 
@@ -118,17 +153,33 @@ footer {
     width: 100%;
 }
 
+#imgATP{
+    width: 20%;
+    float: left;
+}
+
+#imgSJ{
+    width: 20%;
+    float: left;
+}
+
+#txtFl{
+    text-align: justify;
+}
+
 footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 9rem;
+    height: 6rem;
 }
 
 #sticky-footer{
     vertical-align: middle;
 }
 
-#githubimg{
-    width: 90px;
+.footerimg{
+    width: 50px;
+    padding-left: 0.3em;
+    -webkit-filter: invert(100%)
 }
