@@ -165,11 +165,15 @@
 
 #abilities{
     background-color: gainsboro;
+    border: solid;
     overflow: auto;
 }
 
 div[id^="chart"]{
-    width: 1em;
+    /* width: 1em; */
+    display: flex;
+    justify-content: center;
+    
 }
 
 #abilities .habContent:hover{
