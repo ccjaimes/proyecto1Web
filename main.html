@@ -8,6 +8,57 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', { 'packages': ['gauge'] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+      var info = [
+        ['Label', 'Value'],
+        ['Java', 95],
+        ['Python', 75],
+        ['JavaScript', 50],
+        ['DJango', 65],
+        ['Node', 40],
+        ['Angular', 60],
+        ['Sony Vegas', 80],
+        ['After Effects', 30],
+        ['Cinema 4D', 30],
+      ];
+
+      var options = {
+        yellowFrom: 80, yellowTo: 100,
+        minorTicks: 5
+      };
+
+      function dibujo() {
+        for (let index = 1; index < 10; index++) {
+          const element = info[0];
+          let valor = info[index];
+          var data = google.visualization.arrayToDataTable([
+            element,
+            valor
+          ]);
+          var chart = new google.visualization.Gauge(document.getElementById('chart-' + index));
+          chart.draw(data, options);
+        }
+      }
+
+      dibujo();
+
+      function resizeHandler() {
+        dibujo();
+      }
+      if (window.addEventListener) {
+        window.addEventListener('resize', resizeHandler, false);
+      }
+      else if (window.attachEvent) {
+        window.attachEvent('onresize', resizeHandler);
+      }
+    }
+  </script>
   <title>Hello, world!</title>
 </head>
 
@@ -260,37 +311,40 @@
         <div class="row" id="abilityrow">
           <div class="col-12 col-lg-6 mb-3 text-center" id="abilities">
             <h1 class="display-1 text-center">My abilities</h1>
+            <div class="row" id="chart_div">
+
+            </div>
             <div class="row h-25">
-              <div class="col-4 my-auto" >
-                <p class="h4">Java</p>
+              <div class="col-4 my-auto" id="chart-1">
+
               </div>
-              <div class="col-4 my-auto">
-                <p class="h4">Python</p>
+              <div class="col-4 my-auto" id="chart-2">
+
               </div>
-              <div class="col-4 my-auto">
-                <p class="h4">Javascript</p>
+              <div class="col-4 my-auto" id="chart-3">
+
               </div>
             </div>
             <div class="row h-25">
-              <div class="col-4 my-auto">
-                <h4>Django</h4>
+              <div class="col-4 my-auto" id="chart-4">
+
               </div>
-              <div class="col-4 my-auto">
-                <h4>NodeJS</h4>
+              <div class="col-4 my-auto" id="chart-5">
+
               </div>
-              <div class="col-4 my-auto">
-                <h4>Angular</h4>
+              <div class="col-4 my-auto" id="chart-6">
+
               </div>
             </div>
             <div class="row h-25">
-              <div class="col-4 my-auto">
-                <h4>Sony Vegas</h4>
+              <div class="col-4 my-auto" id="chart-7">
+
               </div>
-              <div class="col-4 my-auto">
-                <h4>Cinema 4D</h4>
+              <div class="col-4 my-auto" id="chart-8">
+
               </div>
-              <div class="col-4 my-auto">
-                <h4>After Effects</h4>
+              <div class="col-4 my-auto" id="chart-9">
+
               </div>
             </div>
           </div>

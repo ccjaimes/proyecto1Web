@@ -168,8 +168,8 @@
     overflow: auto;
 }
 
-#abilities .col-4{
-    border: solid;
+div[id^="chart"]{
+    width: 1em;
 }
 
 #abilities .habContent:hover{
