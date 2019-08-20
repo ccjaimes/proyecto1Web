@@ -153,6 +153,10 @@
     width: 100%;
 }
 
+#imgBIB{
+    width: 20%;
+}
+
 #imgATP{
     width: 20%;
     float: left;
